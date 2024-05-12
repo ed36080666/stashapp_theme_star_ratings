@@ -2,7 +2,7 @@
   name: "Star Ratings"
   metadata:
     description: "Display ratings on cards as series of 5 stars instead of the default banner."
-  version: 1.0.0
+  version: 1.1.0
   date: 2024-05-12 00:00:00
   path: dist/plugin.zip
-  sha256: f8607a8ebd428647f45882852ea6692c9ea1e2d20f16387d1260e9427bc0c141
+  sha256: 9c19d455a047f236e329693f6d4fac4ff4594c3e3a7be82589770158d73194ce

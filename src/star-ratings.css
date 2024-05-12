@@ -1,34 +1,39 @@
 :root {
-    --stars: url("https://i.imgur.com/YM1nCqo.png");
+    --stars: url("https://raw.githubusercontent.com/ed36080666/stashapp_theme_star_ratings/main/assets/stars.png");
 }
 
 .scene-card.card .rating-1,
 .performer-card.card .rating-1,
-.movie-card.card .rating-1 {
+.movie-card.card .rating-1,
+.image-card.card .rating-1 {
     width: 22px
 }
 
 .scene-card.card .rating-2,
 .performer-card.card .rating-2,
-.movie-card.card .rating-2 {
+.movie-card.card .rating-2,
+.image-card.card .rating-2 {
     width: 43px
 }
 
 .scene-card.card .rating-3,
 .performer-card.card .rating-3,
-.movie-card.card .rating-3 {
+.movie-card.card .rating-3,
+.image-card.card .rating-3 {
     width: 65px
 }
 
 .scene-card.card .rating-4,
 .performer-card.card .rating-4,
-.movie-card.card .rating-4 {
+.movie-card.card .rating-4,
+.image-card.card .rating-4 {
     width: 86px
 }
 
 .scene-card.card .rating-5,
 .performer-card.card .rating-5,
-.movie-card.card .rating-5 {
+.movie-card.card .rating-5,
+.image-card.card .rating-5 {
     background: none;
     width: 108px
 }
@@ -39,7 +44,8 @@
 .rating-4,
 .scene-card.card .rating-5,
 .performer-card.card .rating-5,
-.movie-card.card .rating-1 {
+.movie-card.card .rating-5,
+.image-card.card .rating-5 {
     background: none;
     background-image: var(--stars);
     height: 20px;
@@ -48,7 +54,8 @@
 
 .scene-card.card .rating-banner,
 .performer-card .rating-banner,
-.movie-card .rating-banner {
+.movie-card .rating-banner,
+.image-card .rating-banner {
     padding: 0;
     left: 5px;
     top: 85%;
@@ -58,6 +65,7 @@
     transform: rotate(0deg);
 }
 
+/** SCENE CARDS */
 /* adjust for height of progress bar (if present) */
 .video-section:has(.progress-bar) .rating-banner {
     top: calc(85% - 5px);
@@ -82,50 +90,37 @@
 }
 
 .scene-card.zoom-3.grid-card.card .rating-banner {
-    top: 89%
+    top: 92%
 }
 
 /* adjust for height of progress bar (if present) */
 .scene-card.zoom-3 .video-section:has(.progress-bar) .rating-banner {
-    top: calc(89% - 5px);
+    top: calc(92% - 5px);
 }
 
-
-.scene-card.zoom-3.grid-card.card .rating-1,
-.scene-card.zoom-3.grid-card.card .rating-2,
-.scene-card.zoom-3.grid-card.card .rating-3,
-.scene-card.zoom-3.grid-card.card .rating-4,
-.scene-card.zoom-3.grid-card.card .rating-5 {
-    background: none;
-    background-image: var(--stars);
-    height: 28px;
-    background-size: 151px 28px;
+/** IMAGE CARDS */
+.image-card.zoom-0.grid-card.card .rating-banner {
+    top: 54%
 }
 
-.scene-card.zoom-3.grid-card.card .rating-1 {
-    width: 30px
+.image-card.zoom-1.grid-card.card .rating-banner {
+    top: 60%
 }
 
-.scene-card.zoom-3.grid-card.card .rating-2 {
-    width: 60px
+.image-card.zoom-2.grid-card.card .rating-banner {
+    top: 68%
 }
 
-.scene-card.zoom-3.grid-card.card .rating-3 {
-    width: 91px
+.image-card.zoom-3.grid-card.card .rating-banner {
+    top: 73%
 }
 
-.scene-card.zoom-3.grid-card.card .rating-4 {
-    width: 121px
-}
-
-.scene-card.zoom-3.grid-card.card .rating-5 {
-    width: 151px
-}
-
+/** PERFORMER CARDS */
 .performer-card .rating-banner {
     top: 94%;
 }
 
+/** MOVIE CARDS */
 .movie-card .rating-banner {
     top: 57%;
 }
