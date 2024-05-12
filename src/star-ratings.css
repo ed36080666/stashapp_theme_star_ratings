@@ -1,0 +1,135 @@
+:root {
+    --stars: url("https://i.imgur.com/YM1nCqo.png");
+}
+
+.scene-card.card .rating-1,
+.performer-card.card .rating-1,
+.movie-card.card .rating-1 {
+    width: 22px
+}
+
+.scene-card.card .rating-2,
+.performer-card.card .rating-2,
+.movie-card.card .rating-2 {
+    width: 43px
+}
+
+.scene-card.card .rating-3,
+.performer-card.card .rating-3,
+.movie-card.card .rating-3 {
+    width: 65px
+}
+
+.scene-card.card .rating-4,
+.performer-card.card .rating-4,
+.movie-card.card .rating-4 {
+    width: 86px
+}
+
+.scene-card.card .rating-5,
+.performer-card.card .rating-5,
+.movie-card.card .rating-5 {
+    background: none;
+    width: 108px
+}
+
+.rating-1,
+.rating-2,
+.rating-3,
+.rating-4,
+.scene-card.card .rating-5,
+.performer-card.card .rating-5,
+.movie-card.card .rating-1 {
+    background: none;
+    background-image: var(--stars);
+    height: 20px;
+    background-size: 108px 20px;
+}
+
+.scene-card.card .rating-banner,
+.performer-card .rating-banner,
+.movie-card .rating-banner {
+    padding: 0;
+    left: 5px;
+    top: 85%;
+    background-position: left;
+    font-size: .01rem;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+/* adjust for height of progress bar (if present) */
+.video-section:has(.progress-bar) .rating-banner {
+    top: calc(85% - 5px);
+}
+
+.scene-card.zoom-0.grid-card.card .rating-banner {
+    top: 81%
+}
+
+/* adjust for height of progress bar (if present) */
+.scene-card.zoom-0 .video-section:has(.progress-bar) .rating-banner {
+    top: calc(81% - 5px);
+}
+
+.scene-card.zoom-2.grid-card.card .rating-banner {
+    top: 90%
+}
+
+/* adjust for height of progress bar (if present) */
+.scene-card.zoom-2 .video-section:has(.progress-bar) .rating-banner {
+    top: calc(90% - 5px);
+}
+
+.scene-card.zoom-3.grid-card.card .rating-banner {
+    top: 89%
+}
+
+/* adjust for height of progress bar (if present) */
+.scene-card.zoom-3 .video-section:has(.progress-bar) .rating-banner {
+    top: calc(89% - 5px);
+}
+
+
+.scene-card.zoom-3.grid-card.card .rating-1,
+.scene-card.zoom-3.grid-card.card .rating-2,
+.scene-card.zoom-3.grid-card.card .rating-3,
+.scene-card.zoom-3.grid-card.card .rating-4,
+.scene-card.zoom-3.grid-card.card .rating-5 {
+    background: none;
+    background-image: var(--stars);
+    height: 28px;
+    background-size: 151px 28px;
+}
+
+.scene-card.zoom-3.grid-card.card .rating-1 {
+    width: 30px
+}
+
+.scene-card.zoom-3.grid-card.card .rating-2 {
+    width: 60px
+}
+
+.scene-card.zoom-3.grid-card.card .rating-3 {
+    width: 91px
+}
+
+.scene-card.zoom-3.grid-card.card .rating-4 {
+    width: 121px
+}
+
+.scene-card.zoom-3.grid-card.card .rating-5 {
+    width: 151px
+}
+
+.performer-card .rating-banner {
+    top: 94%;
+}
+
+.movie-card .rating-banner {
+    top: 57%;
+}
+
+:root {
+    --stars: url("https://i.imgur.com/YM1nCqo.png");
+}
