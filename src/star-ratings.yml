@@ -1,4 +1,4 @@
-name: "Stash Theme: Star Ratings DEV"
+name: "Stash Theme: Star Ratings"
 description: "Display ratings on cards as series of 5 stars instead of the default banner."
 version: 1.0.0
 ui:
